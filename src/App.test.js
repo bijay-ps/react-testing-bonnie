@@ -12,13 +12,13 @@ const setup = () => {
   return mount(<App />);
 };
 
-it("should render App component without any error", () => {
+xit("should render App component without any error", () => {
   const wrapper = setup();
   const appComponent = findByTestAttr(wrapper, "component-app");
   expect(appComponent).toHaveLength(1);
 });
 
-describe("get secret word", () => {
+xdescribe("get secret word", () => {
   beforeEach(() => {
     mockGetSecretWord.mockClear();
   });
