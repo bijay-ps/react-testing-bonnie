@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4520659f-da7a-4b75-9f0f-23487b9758cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/reducers/secretWordReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/integration.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/integration.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/guessedWordsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/guessedWordsReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guessWord.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/guessWord.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +92,7 @@
       <workItem from="1624780366069" duration="629000" />
       <workItem from="1624858152987" duration="14163000" />
       <workItem from="1624876157421" duration="7529000" />
-      <workItem from="1624945008047" duration="7521000" />
+      <workItem from="1624945008047" duration="8291000" />
     </task>
     <servers />
   </component>
