@@ -12,11 +12,11 @@ const setup = (props = {}) => {
   return shallow(<GuessedWords {...setupProps} />);
 };
 
-xit("should not throw warning with expected props", function () {
+it("should not throw warning with expected props", function () {
   checkProps(GuessedWords, defaultProps);
 });
 
-xdescribe("If there are no words guessed", () => {
+describe("If there are no words guessed", () => {
   let wrapper;
   beforeEach(() => {
     wrapper = setup({ guessedWords: [] });
@@ -31,7 +31,7 @@ xdescribe("If there are no words guessed", () => {
   });
 });
 
-xdescribe("If there are words guessed", () => {
+describe("If there are words guessed", () => {
   let guessedWords = [
     { guessedWord: "train", letterMatchCount: 3 },
     { guessedWord: "agile", letterMatchCount: 1 },

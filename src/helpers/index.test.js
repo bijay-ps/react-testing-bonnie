@@ -1,6 +1,6 @@
 import { getLetterMatchCount } from "./index";
 
-xdescribe("getLetterMatchCount", () => {
+describe("getLetterMatchCount", () => {
   const secretWord = "party";
 
   it("should return the correct count when there are no matching letters", function () {
