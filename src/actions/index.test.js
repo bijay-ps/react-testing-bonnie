@@ -1,5 +1,6 @@
 import moxios from "moxios";
 import { getSecretWord } from "./";
+import { storeFactory } from "../../test/testUtils";
 
 describe("getSecretWord", () => {
   beforeEach(() => {
@@ -11,7 +12,8 @@ describe("getSecretWord", () => {
   });
 
   it("should return the secret word", () => {
-    expect.assertions(1);
+    const store = storeFactory();
+    // expect.assertions(1);
 
     moxios.wait(() => {
       const request = moxios.requests.mostRecent();
@@ -22,7 +24,8 @@ describe("getSecretWord", () => {
     });
 
     // update to test app in Redux / context sections
-    return getSecretWord().then((secretWord) => {
+    return store.dispatch(getSecretWord()).then(() => {
+      const secretWord = store.getState().secretWord;
       expect(secretWord).toBe("party");
     });
   });
