@@ -1,6 +1,7 @@
 import React from "react";
-import { shallow } from "enzyme";
-import { findByTestAttr, checkProps } from "./test/testUtils";
+import { mount } from "enzyme";
+import { findByTestAttr, checkProps, storeFactory } from "../test/testUtils";
+import { Provider } from "react-redux";
 import Input from "./Input";
 
 const mockSetCurrentGuess = jest.fn();
@@ -11,15 +12,20 @@ jest.mock("react", () => ({
   useState: (initialState) => [initialState, mockSetCurrentGuess],
 }));
 
-const setup = (success = false, secretWord = "party") => {
-  return shallow(<Input success={success} secretWord={secretWord} />);
+const setup = (initialState = {}, secretWord = "party") => {
+  const store = storeFactory(initialState);
+  return mount(
+    <Provider store={store}>
+      <Input secretWord={secretWord} />
+    </Provider>
+  );
 };
 
-xdescribe("render", () => {
+describe("render", () => {
   describe("success is true", () => {
     let wrapper;
     beforeEach(() => {
-      wrapper = setup(true);
+      wrapper = setup({ success: true });
     });
     it("should render Input component without error", function () {
       const inputComponent = findByTestAttr(wrapper, "component-input");
@@ -38,7 +44,7 @@ xdescribe("render", () => {
   describe("success is false", () => {
     let wrapper;
     beforeEach(() => {
-      wrapper = setup(false);
+      wrapper = setup({ success: false });
     });
     it("should render Input component without error", function () {
       const inputComponent = findByTestAttr(wrapper, "component-input");
@@ -55,15 +61,15 @@ xdescribe("render", () => {
   });
 });
 
-xit("should not throw warning with expected props", function () {
+it("should not throw warning with expected props", function () {
   checkProps(Input, { secretWord: "party" });
 });
 
-xdescribe("state controlled input field", () => {
+describe("state controlled input field", () => {
   let wrapper;
   beforeEach(() => {
     mockSetCurrentGuess.mockClear();
-    wrapper = setup();
+    wrapper = setup({ success: false });
   });
   it("should update state value of input box upon change", function () {
     const inputBox = findByTestAttr(wrapper, "input-box");

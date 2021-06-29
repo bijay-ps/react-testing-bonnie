@@ -1,6 +1,6 @@
 import React from "react";
 import { mount } from "enzyme";
-import { findByTestAttr } from "./test/testUtils";
+import { findByTestAttr } from "../test/testUtils";
 import App from "./App";
 
 const setup = (state = {}) => {

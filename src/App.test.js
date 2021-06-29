@@ -1,24 +1,30 @@
 import App from "./App";
 import { mount } from "enzyme";
-import { findByTestAttr } from "./test/testUtils";
+import { findByTestAttr, storeFactory } from "../test/testUtils";
 import { getSecretWord as mockGetSecretWord } from "./actions";
+import { Provider } from "react-redux";
 
 // activate global mock to make sure getSecretWord doesn't make network call
 jest.mock("./actions");
 
 const setup = () => {
+  const store = storeFactory();
   // use mount, because useEffect not called on 'shallow'
   // https://github.com/airbnb/enzyme/issues/2086
-  return mount(<App />);
+  return mount(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
 };
 
-xit("should render App component without any error", () => {
+it("should render App component without any error", () => {
   const wrapper = setup();
   const appComponent = findByTestAttr(wrapper, "component-app");
   expect(appComponent).toHaveLength(1);
 });
 
-xdescribe("get secret word", () => {
+describe("get secret word", () => {
   beforeEach(() => {
     mockGetSecretWord.mockClear();
   });
