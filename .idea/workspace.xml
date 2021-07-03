@@ -6,12 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="4520659f-da7a-4b75-9f0f-23487b9758cc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Congrats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Congrats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Congrats.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Congrats.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GuessedWords.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuessedWords.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GuessedWords.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuessedWords.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/__mocks__/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/__mocks__/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/secretWordReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/secretWordReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guessWord.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/guessWord.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/index.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +109,7 @@
       <workItem from="1624858152987" duration="14163000" />
       <workItem from="1624876157421" duration="7529000" />
       <workItem from="1624945008047" duration="9540000" />
+      <workItem from="1625276841065" duration="1776000" />
     </task>
     <servers />
   </component>
