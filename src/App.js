@@ -11,7 +11,8 @@ const reducer = (state, action) => {
     case "setSecretWord":
       return { ...state, secretWord: action.payload };
     default:
-      return throw new Error(`Invalid action type ${action.type}`);
+      console.log("Default state reached");
+      return state;
   }
 };
 
