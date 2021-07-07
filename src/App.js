@@ -30,6 +30,16 @@ function App() {
     getSecretWord(setSecretWord);
   }, []);
 
+  if (state.secretWord === null) {
+    return (
+      <div className="container" data-test="spinner">
+        <div className="spinner-border" role="status">
+          <span className="sr-only">Loading...</span>
+          <p>Loading secret word...</p>
+        </div>
+      </div>
+    );
+  }
   return (
     <div data-test="component-app" className="container">
       <h1>Jotto</h1>
