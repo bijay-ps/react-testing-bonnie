@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4520659f-da7a-4b75-9f0f-23487b9758cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/helpers/strings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/strings.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configureStore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/guessedWordsReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/secretWordReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/successReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/successReducer.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/testUtils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +94,7 @@
       <workItem from="1624945008047" duration="9540000" />
       <workItem from="1625276841065" duration="1776000" />
       <workItem from="1625298945155" duration="2042000" />
-      <workItem from="1625640424409" duration="2332000" />
+      <workItem from="1625640424409" duration="5862000" />
     </task>
     <servers />
   </component>
